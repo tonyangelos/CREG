@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Captivate Agent Onboarding Map</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Your onboarding journey, from joining eXp to fully set up on Captivate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="components.css">
+</head>
+<body>
+<div id="cr">
+
+  <!-- NAV -->
+  <header class="ar-nav">
+    <div class="ar-wrap">
+      <div class="ar-logo"><img src="assets/captivate-logo.png" alt="Captivate" width="227" height="28"><span class="ar-sub">Onboarding</span></div>
+      <nav class="ar-links" aria-label="Page sections">
+        <a href="#ar-journey">The journey</a>
+        <a href="#ar-details">Stage details</a>
+        <a href="#ar-faq">Quick answers</a>
+        <a href="#ar-team">Your team</a>
+        <a class="ar-pill" href="sms:9737917408">Text the Hotline</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="ar-hero">
+    <div class="ar-arch" style="width:440px;height:640px;background:var(--ar-brand-deep);right:-110px;bottom:-260px"></div>
+    <div class="ar-arch" style="width:320px;height:520px;border:1px solid rgba(255,255,255,.28);border-bottom:0;right:-40px;bottom:-300px"></div>
+    <div class="ar-wrap">
+      <div class="ar-hero-copy">
+        <span class="ar-badge">Welcome to the team</span>
+        <h1>Your onboarding journey, from joining eXp to fully set up on Captivate.</h1>
+        <p>Two paths run side by side. Here’s every stage, what happens at each one, and what you need to do. Tap any stage to see the details.</p>
+        <div class="ar-cta">
+          <a class="ar-btn ar-btn-primary" href="#ar-journey">See the journey</a>
+          <a class="ar-btn ar-btn-ghost" href="#ar-faq" data-faq-open="0">Already with eXp? Start here</a>
+        </div>
+      </div>
+      <div class="ar-summary">
+        <div class="ar-summary-title">The journey in 11 stages</div>
+        <a class="ar-path-card exp" href="#ar-details" data-open="exp-0">
+          <span class="ar-count" style="background:var(--ar-exp)">7</span>
+          <span><b>eXp path</b><span class="ar-small">Joining the brokerage, from application to eXp onboarding</span></span>
+        </a>
+        <a class="ar-path-card cap" href="#ar-details" data-open="cap-0">
+          <span class="ar-count" style="background:var(--ar-accent)">4</span>
+          <span><b>Captivate path</b><span class="ar-small">Your Captivate onboarding, from welcome email to growth</span></span>
+        </a>
+        <p class="ar-summary-note">Both paths run at the same time. <a href="#ar-faq" data-faq-open="0" style="font-weight:700">Already with eXp? Start here</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY AT A GLANCE -->
+  <section class="ar-sec" id="ar-journey">
+    <div class="ar-wrap">
+      <div class="ar-head">
+        <span class="ar-eyebrow">The journey at a glance</span>
+        <h2 class="ar-h2">Two paths, running at the same time</h2>
+        <p>eXp gets you onto the brokerage. Captivate gets you set up, trained and selling. You don’t need to finish one before starting the other. Tap any stage to open it.</p>
+      </div>
+      <div class="ar-card ar-lanes">
+        <div>
+          <div class="ar-lane-head">
+            <div class="ar-lane-title"><b style="color:var(--ar-accent)">eXp path</b><span>Joining the brokerage</span></div>
+            <a class="ar-chip" href="#ar-faq" data-faq-open="0">Already with eXp? Start here →</a>
+          </div>
+          <div class="ar-scroll"><div class="ar-track" id="ar-lane-exp" style="--line:var(--ar-exp-line);min-width:760px"></div></div>
+        </div>
+        <div class="ar-connect">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"></path><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"></path></svg>
+          <span><b>Where they connect:</b> your Captivate agreement (Captivate stage 1) arrives once your eXp Team Agreement (eXp stage 3) is signed.</span>
+        </div>
+        <div>
+          <div class="ar-lane-head">
+            <div class="ar-lane-title"><b style="color:var(--ar-accent)">Captivate path</b><span>Starts the moment your welcome email lands</span></div>
+          </div>
+          <div class="ar-scroll"><div class="ar-track" id="ar-lane-cap" style="--line:var(--ar-accent-line);min-width:520px"></div></div>
+        </div>
+        <div class="ar-legend"><i></i>Often takes longest, start early</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAGE DETAILS -->
+  <section class="ar-sec" id="ar-details">
+    <div class="ar-wrap">
+      <div class="ar-head">
+        <span class="ar-eyebrow">Stage details</span>
+        <h2 class="ar-h2">What happens at each stage</h2>
+      </div>
+      <div class="ar-tabs" role="tablist">
+        <button class="ar-tab" role="tab" id="ar-tab-exp" data-path="exp" aria-selected="true" style="--c:var(--ar-exp)">eXp path · Joining the brokerage</button>
+        <button class="ar-tab" role="tab" id="ar-tab-cap" data-path="cap" aria-selected="false" style="--c:var(--ar-accent)">Captivate path · Your Captivate onboarding</button>
+      </div>
+      <div class="ar-card ar-detail-card" role="tabpanel">
+        <div class="ar-path-sub" id="ar-path-sub"></div>
+        <div class="ar-scroll"><div class="ar-track" id="ar-stepper" style="--line:var(--ar-exp-line)"></div></div>
+        <div class="ar-detail">
+          <div class="ar-detail-main" id="ar-detail-main" aria-live="polite"></div>
+          <div class="ar-side">
+            <div class="ar-pn">
+              <button type="button" class="ar-prev" id="ar-prev" disabled>Previous stage</button>
+              <button type="button" class="ar-next" id="ar-next">Next stage</button>
+            </div>
+            <div class="ar-help">
+              <b>Questions about this stage?</b>
+              <span>Text the Happiness Hotline and we’ll help you move it along.</span>
+              <a href="sms:9737917408" style="font-weight:700">973-791-7408</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="ar-sec" id="ar-faq">
+    <div class="ar-wrap ar-faq">
+      <div class="ar-faq-intro">
+        <span class="ar-eyebrow">Quick answers</span>
+        <h2 class="ar-h2">The questions new agents ask most</h2>
+        <p>Still unsure? Text the Happiness Hotline any time.</p>
+      </div>
+      <div class="ar-faq-list" id="ar-faq-list"></div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="ar-team-sec" id="ar-team">
+    <div class="ar-wrap">
+      <div class="ar-head">
+        <span class="ar-eyebrow">Your team</span>
+        <h2 class="ar-h2">Friendly faces you’ll meet along the way</h2>
+      </div>
+      <div class="ar-team" id="ar-team-list"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="ar-foot">
+    <div class="ar-wrap">
+      <div class="ar-foot-top">
+        <div>
+          <h2>Need a hand? We’re one text away.</h2>
+          <p>Save the Happiness Hotline number. It’s how you reach the Captivate team any time during onboarding.</p>
+        </div>
+        <div class="ar-cta">
+          <a class="ar-btn ar-btn-primary" href="sms:9737917408">Text 973-791-7408</a>
+          <a class="ar-btn ar-btn-ghost" href="https://accp-onboardingstatus.expenterprise.com/" target="_blank" rel="noopener">Check eXp status</a>
+        </div>
+      </div>
+      <div class="ar-foot-grid">
+        <div><strong>Agent Success Concierge</strong><span>Shabana Karim</span><a href="mailto:skarim@alignteam.com">skarim@alignteam.com</a><a href="tel:+16303946270">(630) 394-6270</a></div>
+        <div><strong>Apply to eXp</strong><a href="https://join.exprealty.com/" target="_blank" rel="noopener">join.exprealty.com</a></div>
+        <div><strong>eXp onboarding emails</strong><a href="mailto:agentonboarding@exprealty.net">agentonboarding@exprealty.net</a></div>
+      </div>
+      <div class="ar-foot-brand">
+        <div class="ar-logo"><img src="assets/captivate-logo.png" alt="Captivate" width="227" height="28"></div>
+        <div class="ar-copy">© Captivate Real Estate Group, brokered by eXp Realty</div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script src="content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
